@@ -1,0 +1,79 @@
+:root {
+  --gray: gray;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  color: white;
+  font-size: 15px;
+  border-style: none;
+  background-color: white;
+}
+
+.fa-search:before {
+  content: "\1F50D";
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+.row {
+  border: solid 4px rgb(203, 191, 191);
+  padding: 2rem;
+  width: 33%;
+  margin: 5px;
+  text-align: left;
+  height: 100%;
+}
+
+.row p:nth-child(3) {
+  color: var(--gray);
+  margin-top: -15px;
+  margin-bottom: -8px;
+}
+
+.row p:nth-child(4) {
+  margin-bottom: 55px;
+}
+
+.row:nth-child(even) :first-child {
+  color: green;
+}
+
+.nav {
+  display: flex;
+
+  column-gap: 22rem;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+.nav p {
+  color: var(--gray);
+  text-decoration: underline;
+}
+.nav h1 {
+  text-decoration: underline;
+}
+
+.row:hover {
+  border: solid 1.5px var(--gray);
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: rgb(237, 233, 233);
+  margin: 1rem;
+}
